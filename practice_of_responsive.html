@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,html,body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 16px;
+
+        }
+
+        .parent {
+
+            height: 1080px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: space-evenly;
+            justify-content: space-evenly;
+        }
+
+        .child {
+            height: 520px;
+            width: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .info {
+            border-bottom: 0.2px solid gray;
+            width: 80%;
+            height: 160px;
+            /* border: 1px solid red; */
+             
+        }
+
+        .img {
+            width: 80%;
+            height: 200px;
+        }
+
+        .footer {
+            height: 70px;
+            /* border: 1px solid red; */
+            
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.9rem;
+            font-family: 'Poppins', sans-serif;
+            line-height: 27px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:767px) { 
+            .parent {
+                 
+                display: grid;
+                grid-template-columns:auto !important;
+                row-gap: 10px; 
+                width: 100% !important;
+                justify-content: center;
+                align-items: center;
+            }  
+             img{
+                height: 100% !important;
+                width: 100% !important;
+             }
+             
+            
+              
+             
+             
+             
+        }
+
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            .parent {
+                height:100%!important;
+                width:100%!important;
+                display: grid !important;
+                grid-template-columns:auto auto !important;
+                justify-content: center;
+                row-gap: 10px;
+                align-items: center;
+                gap:5px;
+                 
+            }
+            img{
+                height:100% !important;
+                width:100% !important;
+            }
+            .child{
+                width: 340px !important;
+               height: 520px;
+            }
+             
+               
+        }
+
+/* 
+        @media screen and (min-width:1025px) and (max-width:1618px) {
+            .parent {
+                height:100% !important;
+                width:100% !important;
+                display: grid;
+                grid-template-columns: auto auto auto !important;
+                align-items: center; 
+                justify-content:center;
+                flex-wrap: wrap;
+               align-items: center;
+               row-gap: 15px;
+              
+               
+              
+            }
+          
+           img{
+            height: 100% !important;
+            width: 100% !important;
+           }
+            
+            
+           
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child">
+            <div class="img"><img
+                    src="https://media.istockphoto.com/id/1255236204/photo/technology.jpg?s=612x612&w=0&k=20&c=_f1bcN8967Vb2-9nI2M8LCOTyN9CJRaBNomnJ786MzY="
+                    alt=""></div>
+            <div class="info">
+                <h1>New to the web platform in February</h1>
+                <p>Discover some of the interesting features that have landed in stable and beta web browsers during
+                    February 2024.</p>
+            </div>
+            <div class="footer">
+                <p id="left">Pratiksha Chaure</p>
+                <p id="left">10-9-2002 </p>
+            </div>
+        </div>
+
+        <div class="child">
+            <div class="img"><img
+                    src="https://media.istockphoto.com/id/1356118511/photo/smart-city-and-abstract-dot-point-connect-with-gradient-line.jpg?s=612x612&w=0&k=20&c=GJldTyxDEt0GodKxGONHz9PrN9QcQQAGKONUM0vBvYc="
+                    alt=""></div>
+            <div class="info">
+                <h1>New to the web platform in February</h1>
+                <p>Discover some of the interesting features that have landed in stable and beta web browsers during
+                    February 2024.</p>
+            </div>
+            <div class="footer">
+                <p id="left">Pratiksha Chaure</p>
+                <p id="left">10-9-2002</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="img"><img src="https://web.dev/static/blog/interop-2023-wrapup/image/hero.jpg" alt=""></div>
+            <div class="info">
+                <h1>New to the web platform in February</h1>
+                <p>Discover some of the interesting features that have landed in stable and beta web browsers during
+                    February 2024.</p>
+            </div>
+            <div class="footer">
+                <p id="left">Pratiksha Chaure</p>
+                <p id="left">10-9-2002</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="img"><img src="https://web.dev/static/blog/web-platform-12-2023/hero.jpg" alt=""></div>
+            <div class="info">
+                <h1>New to the web platform in February</h1>
+                <p>Discover some of the interesting features that have landed in stable and beta web browsers during
+                    February 2024.</p>
+            </div>
+            <div class="footer">
+                <p id="left">Pratiksha Chaure</p>
+                <p id="left">10-9-2002</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="img"><img src="https://web.dev/static/blog/web-platform-04-2024/hero.jpg" alt=""></div>
+            <div class="info">
+                <h1>New to the web platform in February</h1>
+                <p>Discover some of the interesting features that have landed in stable and beta web browsers during
+                    February 2024.</p>
+            </div>
+            <div class="footer">
+                <p id="left">Pratiksha Chaure</p>
+                <p id="left">10-9-2002</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="img"><img src="https://web.dev/static/blog/align-content-block/image/thumbnail.jpg" alt="">
+            </div>
+            <div class="info">
+                <h1>New to the web platform in February</h1>
+                <p>Discover some of the interesting features that have landed in stable and beta web browsers during
+                    February 2024.</p>
+            </div>
+            <div class="footer">
+                <p id="left">Pratiksha Chaure</p>
+                <p id="left">10-9-2002</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

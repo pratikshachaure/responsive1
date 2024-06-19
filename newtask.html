@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\priyanka javascript\newtask.css">
+    
+</head>
+<body>
+    <!-- section 1st -->
+    <div class="parent">
+        <div class="child one">
+            <h1 id="heading">Institute Survey Form</h1>
+
+            <p>We would love hear your thoughts on how we can improve your experience.</p>
+
+            
+            <img id="images" src="C:\Users\user\Downloads\background_remove-removebg-preview.png" alt="">
+
+            <img  id="image" src="C:\Users\user\Downloads\surways-removebg-preview (1).png" alt="">
+        </div>
+
+        <!-- section 2nd -->
+
+
+
+
+   
+        
+        <div class="child">
+            <div class="circle-style">
+               <div class="circle" onclick="one()">1</div><hr>
+               <div class="circle" onclick="two()">2</div><hr>
+               <div class="circle" onclick="three()">3</div><hr>
+               <div class="circle" onclick="four()">4</div><hr>
+               <div class="circle" onclick="five()">5</div>
+               
+            </div><br><br><br>
+
+            <!-- 1st page with table-->
+            <div class="one">
+
+            <div class="first" > 
+                <h1 id="h1">How long have you know our Institute?</h1>
+                 <table>
+                <tr>
+                    <td><button>never</button></td>
+                    <td><button>0 - 1 year</button></td>
+                </tr>
+                <tr>
+                    <td><button>1 - 2 years</button></td>
+                    <td><button>> 5 years</button></td>
+                </tr>
+                <tr>
+                    <td><button  class="red">Next</button></td>
+                </tr>
+   
+            </table>
+         </div>
+
+         <!-- second page -->
+
+         <div class="two" id="second" style="display: none;">
+         <h1>What is your overall opinion about the institute?</h1>
+          <table>
+            <tr>
+                <td> <input type="radio" name="same">Not Satisfied</td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" name="same">Quite Satisfied </td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" name="same">Satisfied</td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" name="same">Completely Satisfied</td>
+            </tr>
+
+            <tr>
+                <td><button class="red">Prev</button></td>
+                <td><button class="red">Next</button></td>
+            </tr>
+
+          </table>
+        </div>
+
+         
+           
+          
+
+<!-- third section -->
+
+<div class="four" style="display: none;">
+    <table>
+    <tr>
+        <td><input type="radio">Search Engine</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio">A friend of mine</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio">Social</td>
+    </tr>
+
+    <tr>
+        <td>Additional message:</td>
+    </tr>
+    <tr>
+        <td><textarea name="#" id="set"></textarea></td>
+    </tr>
+
+    <tr>
+        <td><button class="red">Prev</button></td>
+        <td><button class="red">Next</button></td>             
+    </tr>
+</table>
+</div>
+
+
+<div class="five">
+    <form>
+    <table>
+       
+           <tr>
+            <td> Name: </td>
+        </tr>
+
+        <tr>
+            <td><input type="text" class="text"></td>
+        </tr>
+          
+            <tr>
+                <td> Email:</td>
+            </tr>
+            
+            <tr>
+                <td><input type="text" class="text"></td>
+            </tr>
+           
+           <tr>
+            <td><input type="text" class="text" placeholder="India"></td>
+           </tr>
+
+         <tr>
+            <td> Age:</td>
+         </tr>
+
+         <tr>
+            <td><input type="number" id="number"></td>
+         </tr>
+           
+         <tr>
+            <td>  <button class="red">Prev</button></td>
+            <td><button class="red">Next</button></td>
+         </tr>
+        </table>
+    </form>
+</div>
+    </div>
+    </div>
+</body>
+<script>
+function one()
+{
+    
+    document.querySelector('.first').style.display="block"
+    document.querySelector('.two').style.display="none"
+    document.querySelector('.three').style.display="none"
+    document.querySelector('.four').style.display="none"
+    document.querySelector('.five').style.display="none"
+
+}
+function two()
+{
+    document.querySelector('.first').style.display="none"
+    document.querySelector('.two').style.display="block"
+    document.querySelector('.three').style.display="none"
+    document.querySelector('.four').style.display="none"
+    document.querySelector('.five').style.display="none"
+}  
+function three()
+{
+    document.querySelector('.first').style.display="none"
+    document.querySelector('.two').style.display="block"
+    document.querySelector('.three').style.display="none"
+    document.querySelector('.four').style.display="none"
+    document.querySelector('.five').style.display="none"
+}  
+function four()
+{
+    document.querySelector('.first').style.display="none"
+    document.querySelector('.two').style.display="block"
+    document.querySelector('.three').style.display="none"
+    document.querySelector('.four').style.display="none"
+    document.querySelector('.five').style.display="none"
+}  
+function five()
+{
+    document.querySelector('.first').style.display="none"
+    document.querySelector('.two').style.display="block"
+    document.querySelector('.three').style.display="none"
+    document.querySelector('.four').style.display="none"
+    document.querySelector('.five').style.display="none"
+}  
+
+
+</script>
+</html>
